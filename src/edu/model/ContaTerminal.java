@@ -29,10 +29,10 @@ public class ContaTerminal {
         String agencia = "";
 
         for (String digito : numero) {
-            if(digito == numero[3]) agencia += "-";
+            if(digito.equals(numero[3]) && !digito.equals("-")) agencia += "-";
             agencia += digito;
         }
-        
+
         return agencia;
     }
 
